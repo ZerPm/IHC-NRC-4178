@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!------Importación de fuente pie de pagina-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap"
+      rel="stylesheet"
+    />
+    <!------Fin de Importacion de fuente de pie de pagina-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web Ejemplo IHC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu/menu_toggle.css" />
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img width="75" height="40" src="../img/leon.png" alt="imglogo" />
+      </a>
+
+      <ul class="Menu-horizontal">
+        <li><a href="">Promociones</a></li>
+        <li>
+          <a href="">Soluciones</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Servicios Financieros</a></li>
+            <li><a href="">Seguros</a></li>
+            <li><a href="">Soluciones</a></li>
+            <li><a href="">Mundo Diners</a></li>
+          </ul>
+        </li>
+        <li><a href="">Privilegios</a></li>
+        <li><a href="">Canales</a></li>
+        <li><a href="#contactanos">Contactenos</a></li>
+
+        <!-- Nuevo item móvil para cerrar sesión -->
+        <li class="mobile-logout" style="display: none">
+          <a href="#" id="mobile-logout">Cerrar Sesión</a>
+        </li>
+      </ul>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    </nav>
+    <!--seccion PROMOCION-->
+    <section class="seccion-promo">
+      <div class="div-gral-promo">
+        <div class="div-promo-texto">
+          <h2>Seccion Promociones</h2>
+
+          <p>
+            La promoción de productos es un aspecto importante en el marketing
+            de productos. Uno de los principales objetivos de la promoción del
+            producto es aumentar las ventas al expandir el reconocimiento del
+            producto ante los compradores, al igual que los beneficios para los
+            clientes potenciales.
+          </p>
+
+          <p>
+            La promoción de productos es importante porque es una parte esencial
+            de la estrategia de marketing de una marca. Puede ayudar a aumentar
+            el reconocimiento de marca para llegar a los consumidores
+            potenciales en el marketplace, así como también ayuda a profundizar
+            las relaciones con los clientes al recompensarlos con referencias,
+            programas de lealtad u ofertas especiales, lo que puede aumentar las
+            ventas.
+          </p>
+          <button>Leer más...</button>
+        </div>
+        <div class="div-promo-img">
+          <img src="img/promotora-3.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--seccion PRIVILEGIOS-->
+    <section class="seccion-privi">
+      <div class="div-gral-privi">
+        <div class="div-privi-texto">
+          <h2>Seccion Privilegios</h2>
+
+          <p>
+            El privilegio es la ventaja exclusiva o especial (como la exención
+            de una obligación general o el permiso para condiciones de
+            exclusividad) que alguien goza por concesión de un superior o por
+            determinada circunstancia propia. ​ Se opone al moderno concepto de
+            derechos, y puede identificarse con el antiguo concepto de honor.
+            Respondiendo a su origen etimológico (el latín privilegium), puede
+            definirse como una «ley privada», o sea, no pública o general, sino
+            relativa a un individuo o cuerpo social específico y distinguido de
+            los demás.
+          </p>
+
+          <p>
+            Los estamentos privilegiados eran dos: la nobleza y el clero, y
+            basaban sus privilegios en su función: una sociedad dividida en
+            oratores, iudices et laboratores, ponía el privilegio en manos de
+            quienes tenían a su cargo la salvación o condenación eterna
+            (oratores: clérigos) y la protección o el castigo físico (iudices:
+            caballeros), mientras que el tercer estado (labor atores) era no
+            privilegiado, debía trabajar para mantenerse a sí mismo y a los
+            otros dos.
+          </p>
+        </div>
+        <div class="div-privi-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zmVAcgedOxw?si=RHlFb4Wl92Ri0pT1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write;encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!--Formulario-->
+    <section class="seccion-formulario" id="contactanos">
+      <div class="div-contenedor-formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete los campos para registrarse</p>
+        <form class="Formulario">
+          <!--Imput Text-->
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre completo"
+            />
+          </div>
+          <!--Lista desplegable-->
+          <div class="campo">
+            <label for="nombre">País:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un país</option>
+              <option value="peru">Peru</option>
+              <option value="argentina">Argentina</option>
+              <option value="brazil">Brazil</option>
+            </select>
+          </div>
+          <!--Check box-->
+          <div class="campo">
+            <label>Intereses</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="int1"
+                  />Opc1</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="int2"
+                  />Opc2</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="int3"
+                  />Opc3</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="intereses"
+                    value="int4"
+                  />Opc4</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Radio Button-->
+          <div class="campo">
+            <label>Sexo</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="m" />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="f" />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button input type="sumbit">Registrarse ya</button>
+        </form>
+      </div>
+    </section>
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="../img/leon.png" alt="Logo" class="footer-logo" />
+            <p>Christian</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="#">Política de Privacidad</a>
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Sígueme en</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="menu/menu_toggle.js"></script>
+  </body>
+</html>

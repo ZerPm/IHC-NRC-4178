@@ -1,0 +1,53 @@
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none; /* oculto por desktop */
+  font-size: 2rem;
+  background: #ffcc00; /* color amarillo para que destaque */
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.menu-toggle:hover {
+  background: #333;
+  color: white;
+  transform: rotate(90deg) scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: black;
+  }
+
+  .Menu-horizontal {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+  }
+
+  .Menu-horizontal.active {
+    display: flex;
+  }
+
+  .Menu-horizontal li {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+  }
+
+  .mobile-logout a {
+    color: red;
+    font-weight: bold;
+  }
+}
